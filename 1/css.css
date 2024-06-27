@@ -1,0 +1,271 @@
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1,
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Specific sections */
+#aboutus {
+    background-color: lightblue;
+}
+
+#languages {
+    background-color: lightblue;
+}
+
+#languages ul {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space out evenly */
+    flex-wrap: wrap; /* Wrap to the next line if necessary */
+    padding: 0;
+    list-style: none;
+}
+
+#languages ul li {
+    text-align: center;
+    margin: 10px;
+    flex: 1; /* Flex grow to ensure equal size */
+    min-width: 200px; /* Minimum width to ensure buttons don't get too small */
+}
+
+#languages ul li img {
+    width: 100px; /* Set a fixed size for images */
+    height: auto;
+}
+
+#languages button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#languages button:hover {
+    background-color: #45a049;
+    cursor: pointer;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+}
+
+#pricing {
+    background-color: lightblue;
+}
+
+#pricing ul {
+    list-style: none;
+    padding: 0;
+}
+
+#pricing ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#location {
+    background-color: lightblue;
+}
+
+#location iframe {
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer div,
+footer form {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div h2,
+footer div p {
+    margin: 10px 0;
+}
+
+footer div ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer form label {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+footer form input[type="text"],
+footer form input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer form button[type="reset"] {
+    background-color: #f44336;
+}
+
+footer form button:hover {
+    opacity: 0.9;
+}
+
+#contact ul li a{
+    color: #4CAF50;
+
+}
+
+#contact ul li a:hover{
+   text-decoration: underline;
+    font-weight:800;
+    color: rgb(63, 226, 63);
+    font-size:500 ;
+}
+
+
